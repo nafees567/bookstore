@@ -1,0 +1,453 @@
+:root {
+    --bg-gradient: linear-gradient(#dd2476, #ff512f);
+    --bg-gradient-inverse: linear-gradient(#ff512f, #dd2476);
+    --bg-gradient-light: linear-gradient(
+        rgba(148, 73, 45, 0.7),
+        rgba(255, 105, 180, 0.7)
+    );
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Abel", sans-serif !important;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* Global Stuff Ends Here */
+
+/* Landing Section Starts */
+.landing-section {
+    background: var(--bg-gradient);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Starts Here */
+
+.navbar {
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+    font-family: "Abel", sans-serif;
+    /* box-shadow: 0 0 25px 0 black; */
+}
+
+.navbar .navbar-brand {
+    margin-left: 8rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white !important;
+}
+
+.navbar .navbar-brand img {
+    margin-top: -0.4rem !important;
+    margin-right: 0.4rem;
+}
+
+.navbar .nav-item {
+    padding: 0 1rem;
+}
+
+.navbar .nav-item + .nav-item {
+    margin-left: 1rem !important;
+}
+
+.navbar .nav-item:last-child {
+    margin-right: 6rem !important;
+}
+
+.navbar ul li a {
+    color: white !important;
+}
+
+.navbar ul .dropdown-menu a {
+    color: dimgray !important;
+}
+
+/* Header Section Styling Starts Here */
+.header-section {
+    text-align: center;
+    color: white;
+}
+
+.header-section h2 {
+    margin-top: 18rem;
+    font-size: 1.6rem;
+}
+
+.header-section h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.header-section p {
+    font-size: 1.1rem;
+}
+
+.btn {
+    color: #333 !important;
+    padding: 1rem 2rem !important;
+    border-radius: 100px !important;
+    border: 2px solid #fff !important;
+    font-size: 1.2rem !important;
+    background: whitesmoke;
+    transition: all 0.3s linear !important;
+}
+
+.btn:hover,
+.btn-dark:hover {
+    background: var(--bg-gradient-inverse);
+    color: #fff !important;
+}
+
+/* Features Section Styling Starts */
+.features-section {
+    min-height: 100vh;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+        url("../assets/friends-jumping.jpg");
+    background-attachment: fixed;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: 60% 10%;
+    color: #fff;
+    padding: 8rem 2rem 5rem;
+}
+
+.features-title {
+    padding: 0 0 8rem;
+    text-align: center;
+}
+
+.features-title h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.features-title p {
+    font-size: 1.4rem;
+}
+
+/* Numbers Cards Section */
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: space-around;
+}
+
+.number-card {
+    height: 12rem;
+    width: 22rem;
+    padding: 4rem 3rem;
+    background-color: white;
+    box-shadow: 0 0 30px 0 orange;
+    text-align: center;
+    margin: 2rem 0.6rem;
+}
+
+.number-card h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: orange;
+    text-shadow: 0 0 4px orange;
+    margin-top: -0.5rem;
+}
+
+.number-card p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Purchase Section */
+.purchase-section {
+    font-family: inherit;
+    min-height: 100vh;
+    height: auto;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.purchase-section .purchase-title h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: orange;
+    text-shadow: 0 0 3px orange;
+}
+
+.purchase-section .purchase-title p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    color: #999;
+}
+
+.purchase-section .card {
+    padding: 1rem 0;
+    border: none;
+    box-shadow: 0 0 15px 0 #ccc;
+}
+
+.purchase-section .card-body h3 + p {
+    padding: 2.4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.purchase-section .card-body p:nth-child(3) {
+    font-size: 2rem;
+}
+
+.purchase-section .card-body span {
+    font-size: 5rem;
+    color: orange;
+    text-shadow: 0 0 5px orange;
+}
+/* 
+.purchase-section .card-body a {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.6rem;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 6rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.purchase-section .card-body a:hover {
+    background-color: orange;
+    color: white;
+} */
+
+/* Download Section Styling Starts Here */
+.download-section {
+    text-align: center;
+    padding: 2rem 0;
+    min-height: 55vh;
+    height: auto;
+    background: var(--bg-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.download-section h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+
+.download-section .download-title p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.download-section .btn {
+    padding: 0.7rem 1.2rem !important;
+}
+
+.download-section .btn + .btn {
+    margin-left: 1.6rem;
+}
+
+.download-section .btn span {
+    font-weight: 600;
+}
+
+/* Testimonials Section Styling Starts */
+.testm-section {
+    min-height: 100vh;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testm-section h2 + p {
+    font-family: "Abel", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+}
+
+.testm-section h2 {
+    font-size: 2.6rem;
+}
+
+.testm-section .card {
+    padding: 2rem 1rem 1rem;
+    box-shadow: 0 0 15px 0 #999;
+    margin: 2rem 0;
+}
+
+.testm-section .img-fluid {
+    border-radius: 10rem;
+    width: 100px;
+    height: 100px;
+}
+
+.btn-dark {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+
+/* Footer Section Styling Starts */
+
+.footer-section {
+    background: #333;
+    color: white;
+    padding: 5rem;
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* About */
+.footer-section .about {
+    margin: 1rem 0 4rem;
+}
+
+.footer-section .about p {
+    padding-right: 4rem;
+}
+
+/* Newsletter */
+.newsletter {
+    margin: 1rem 0 4rem;
+}
+
+.newsletter .form-group-n {
+    margin-top: 3rem;
+}
+
+.footer-section .newsletter input {
+    width: 64%;
+    height: 2.4rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.footer-section .newsletter .fa-chevron-right {
+    background: var(--bg-gradient);
+    padding: 0.7rem 0.9rem;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.footer-section p {
+    color: #ccc;
+}
+
+.social-media p {
+    margin-bottom: 2rem;
+}
+
+.social-media i {
+    cursor: pointer;
+}
+
+.social-media i + i {
+    margin-left: 1rem;
+}
+
+.footer-section p[class="text-center"] {
+    margin-top: 4rem;
+    margin-bottom: -4rem;
+}
+
+.footer-section p[class="text-center"] span:nth-child(1) {
+    color: red;
+}
+
+.footer-section p[class="text-center"] span:nth-child(2) {
+    color: orange;
+}
+
+.social-media a {
+    color: #fff;
+}
+
+.social-media a:hover {
+    color: #ff512f;
+}
+
+.social-media a:nth-child(1):hover {
+    color: #3b5998;
+}
+
+.social-media a:nth-child(2):hover {
+    color: #00acee;
+}
+
+.social-media a:nth-child(3):hover {
+    color: #c13584;
+}
+
+.social-media a:nth-child(4):hover {
+    color: #ff0000;
+}
+
+.social-media a + a {
+    margin-left: 2rem;
+}
+
+/* media queries */
+@media (max-width: 990px) {
+    .header-img {
+        width: 400px;
+        margin-top: 20rem;
+    }
+
+    .purchase-section .card {
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav li {
+        text-align: center;
+    }
+
+    .last-nav {
+        margin-right: -6rem;
+    }
+
+    .landing-section {
+        height: auto;
+    }
+
+    .header-img {
+        width: 400px;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .download-buttons a {
+        margin-top: 2.4rem;
+    }
+
+    .navbar .navbar-brand {
+        margin-left: 3rem;
+        font-size: 1.6rem;
+    }
+}
